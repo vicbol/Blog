@@ -1,0 +1,33 @@
+.pagination { 
+    padding: 3px; 
+    margin: 3px; 
+} 
+.pagination a { 
+    padding: 2px 5px 2px 5px; 
+    margin: 2px; 
+    border: 1px solid #0d47a1; 
+    text-decoration: none; 
+    color: #1e88e5; 
+    border-radius: 10%;
+} 
+.pagination a:hover, 
+.pagination a:active { 
+    border: 1px solid #1a237e;
+    background-color: #1565c0; 
+    color: #e3f2fd; 
+} 
+.pagination em.current { 
+    padding: 2px 5px 2px 5px; 
+    margin: 2px; 
+    font-weight: bold; 
+    font-style: normal;
+    background-color: #fff; 
+    color: #1565c0; 
+} 
+.pagination span.disabled { 
+    padding: 2px 5px 2px 5px; 
+    margin: 2px; 
+    border: 1px solid #eee;
+    border-radius: 10%; 
+    color: #bcbcbc; 
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+</head>
+<body>
+	<h1>
+		<%= @article.title %>
+	</h1>
+	<p>
+		<%= truncate(@article.body, lenght: 30)%>
+	</p>
+	<%= link_to "Leer mas", article_url(@article) %>
+</body>
+</html>

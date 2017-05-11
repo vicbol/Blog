@@ -1,0 +1,17 @@
+<div class="grey">
+	<div class="row">
+		<div class="col-xs-6">
+			Participa en los comentarios
+		</div>
+		<div class="col-xs-6">
+			<%= @article.comments.count%> comentario(s)
+		</div>
+	</div>
+	
+	<div class="top-space">
+		<%= render @article.comments %>
+	</div>
+	<div  style="border-top: 1px solid #e0e0e0">
+		<%= render "comments/form" %>
+	</div>
+</div>
