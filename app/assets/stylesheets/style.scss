@@ -21,7 +21,25 @@ a,a:visited{
 
 .img-center{
 	margin: 10px auto;
-	
+	border: 1px solid black; 
+	width: 830px;
+	height:467px;
+}
+
+.img-center img{
+  width: 100%;
+}
+
+@media all and (min-width: 500px) and (max-width: 1000px)
+{  
+.img-center{
+  margin:20px auto;
+  width:280px;
+  height: 157.5px;
+  }
+}
+.img-center img{
+   width:100%;
 }
 
 .close-parent{
