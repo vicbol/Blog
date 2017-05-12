@@ -13,7 +13,7 @@ class Article < ActiveRecord::Base
 	after_create :save_categories
 	after_create :send_mail
 
-	has_attached_file :cover, styles: { medium: "1080x720", thumb: "830x467"}, default_url: "/images/:style/missing.png"
+	has_attached_file :cover, styles: { medium: "830x467", thumb: "433x150"}, default_url: "/images/:style/missing.png"
 	validates_attachment_content_type :cover, content_type: /\Aimage\/.*\Z/
 
 	scope :publicados, ->{ where(state: "published")}

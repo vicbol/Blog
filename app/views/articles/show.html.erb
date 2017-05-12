@@ -1,8 +1,10 @@
 <article class="bottom-space">
-	<%= article_header @article.cover.url %>
 	<div class="row center-xs">
 		<div class="col-xs-12 light-border col-md-7">
 			<h1 class="be-big blue"><%= @article.title %></h1>
+			<div style="border: 1px solid black; width: 830px;" class="img-center">
+				<%= image_tag(@article.cover.url(:medium)) %>
+			</div>
 			<p class="text-right be-small">
 				<%= link_to "Atras", articles_path, class:"underline" %> - <span class="red"><%= @article.visits_count %> visita(s) </span> - <% unless @article.user.nil? %>
 					Escrito por: <%= @article.user.email %>
